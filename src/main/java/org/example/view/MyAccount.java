@@ -1,12 +1,10 @@
 package org.example.view;
 
 public class MyAccount extends View{
-    private int userId;
     private OrdersHistory ordersHistory;
     private ViewAllProducts viewAllProducts;
     private ViewMyCart viewMyCart;
     MyAccount(int userId) {
-        this.userId = userId;
         ordersHistory = new OrdersHistory(userId);
         viewAllProducts = new ViewAllProducts(userId);
         viewMyCart = new ViewMyCart(userId);

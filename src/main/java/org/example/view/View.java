@@ -2,7 +2,7 @@ package org.example.view;
 
 import java.util.Scanner;
 
-abstract public class View {
+public abstract class View {
     public int getUserInputInt() {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();

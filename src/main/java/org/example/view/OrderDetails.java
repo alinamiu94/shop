@@ -1,8 +1,7 @@
 package org.example.view;
 
-import org.example.model.Order;
+
 import org.example.model.Product;
-import org.example.repository.OrderRepository;
 import org.example.repository.ProductRepository;
 
 import java.util.List;
@@ -14,7 +13,7 @@ public class OrderDetails extends View{
 
     private MyAccount myAccount;
 
-    public OrderDetails(int orderId, int userId) {
+    public OrderDetails(int orderId) {
         this.orderId = orderId;
         productRepository = new ProductRepository();
         myAccount = new MyAccount(orderId);
@@ -40,7 +39,9 @@ public class OrderDetails extends View{
 
     public void showOrderDetails() {
             List<Product> productList = productRepository.getAllProductsByOrderId(orderId);
-            productList.stream().forEach(p -> System.out.println(p.getNameProduct() +
-                    p.getDescriptionProduct() + p.getPrice()));
+            productList.stream().forEach(p -> System.out.println(p.getNameProduct() + " - " +
+                    p.getDescriptionProduct() + " - " + p.getPrice() + " lei"));
+            Double total = productList.stream().mapToDouble(p -> p.getPrice()).sum();
+        System.out.println("Total: " + total + " lei");
     }
 }

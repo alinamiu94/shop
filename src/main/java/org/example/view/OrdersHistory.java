@@ -2,7 +2,6 @@ package org.example.view;
 
 import org.example.model.Order;
 import org.example.repository.OrderRepository;
-import org.example.repository.Repository;
 
 import java.util.List;
 
@@ -25,7 +24,7 @@ public class OrdersHistory extends View{
 
         int i = getUserInputInt();
         if(i != 0) {
-            OrderDetails orderDetails = new OrderDetails(i, userId);
+            OrderDetails orderDetails = new OrderDetails(i);
             orderDetails.show();
         } else {
             MyAccount myAccount = new MyAccount(userId);

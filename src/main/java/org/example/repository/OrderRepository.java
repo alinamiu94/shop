@@ -1,8 +1,7 @@
 package org.example.repository;
 
 import org.example.model.Order;
-import org.example.model.Product;
-import org.example.model.User;
+
 
 import java.sql.*;
 import java.util.ArrayList;
