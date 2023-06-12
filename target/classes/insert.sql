@@ -1,0 +1,6 @@
+insert into product(id, name,description,price) values (nextval('order_seq'), 'Mini dress', 'wrap V neck Height of female model: 172 cmThe model is presenting product in size S/36', 120);
+insert into product(id, name,description,price) values (nextval('order_seq'), 'Wide leg jumpsuit', 'V neck relaxed short sleeves elasticated waistband long relaxed legs', 200);
+insert into product(id, name,description,price) values (nextval('order_seq'), 'Viscose rich mini dress', 'V neck relaxed short sleeves button fastening mini length', 150);
+insert into product(id, name,description,price) values (nextval('order_seq'), 'Patterned dress', 'relaxed short sleeves concealed zip fastening to the back midi length', 250);
+insert into product(id, name,description,price) values (nextval('order_seq'), 'Wrap jumpsuit', 'V neck narrow straps ¾ wide legs', 230);
+insert into product(id, name,description,price) values (nextval('order_seq'), 'Organic cotton dress', 'classic collar short sleeves pleat-concealed button fastening tie waist belt midi length', 130);
