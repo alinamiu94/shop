@@ -13,10 +13,10 @@ public class LogInView extends View{
 
 
     public void logIn() {
-        System.out.println("Enter your user name: ");
+        System.out.print("Enter your user name: ");
         String s = getUserInputString();
 
-        System.out.println("Enter your password: ");
+        System.out.print("Enter your password: ");
         String p = getUserInputString();
         UserRepository userRepository = new UserRepository();
         User user = userRepository.findUserByUserName(s);

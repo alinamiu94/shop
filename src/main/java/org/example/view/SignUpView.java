@@ -15,7 +15,7 @@ public class SignUpView extends View{
         System.out.print("Enter your name: ");
         String name = getUserInputString();
 
-        System.out.println("Enter your password: ");
+        System.out.print("Enter your password: ");
         String password = getUserInputString();
 
 
