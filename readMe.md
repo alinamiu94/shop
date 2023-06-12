@@ -56,6 +56,7 @@ In the sign up view, user can sign up. The app will ask for a name and password,
 
 ### 3. Log in View
 ![log-in.png](photos%2Flog-in.png)
+
 In the log in view, users can log in into the app. The password entered by the user will be checked if matched the one in the database using BCrypt.checkpw(plainPassword, dbPassword);
 
 If users doesn't exist it will be shown "User doesn't exist!". If the password is not correct it will be shown "Password is not correct".
